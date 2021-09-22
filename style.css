@@ -12,7 +12,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0px;
-    /* background-image: url("/images/sun-tornado.svg"); */
+    background-image: url("/images/radiant-gradient.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -46,7 +46,6 @@ input {
     margin: auto;
 }
 
-/* hide arrows from input number field */
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -59,18 +58,25 @@ input::-webkit-outer-spin-button {
     font-size: large;
 }
 
-#btn-check {
-    background-color: var(--btn-bg-color);
-    color: black;
-    margin: 2rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0.4rem;
-    cursor: pointer;
+#btn-check  {background-image: linear-gradient(to right, #FF5F6D 0%, #FFC371  51%, #FF5F6D  100%)}
+#btn-check  {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 10px;
+  display: block;
+  border: none;
+  margin-left: 180px;
 }
 
-#btn-check:hover {
-    background-color: var(--btn-bg-hover-color);
-    color: var(--btn-hover-text-color);
+#btn-check:hover  {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
 }
 
 .link {
